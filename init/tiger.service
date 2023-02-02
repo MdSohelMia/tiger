@@ -1,0 +1,15 @@
+[Unit]
+Description=Gotipath Stream
+After=multi-user.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/root/gotipath-stream/
+ExecStart=/root/gotipath-stream/bin/main
+
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

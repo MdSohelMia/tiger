@@ -1,0 +1,29 @@
+#Learn yaml
+app:
+  name: "Gotipath Multi CDN"
+  env: "production"
+  debug: true
+  host: http://localhost
+  port: 8080
+  timezone: "UTC"
+database:
+  driver: mysql # support driver sqlite,mysql,pgsql
+  migrations: "migrations"
+  tidb:
+    host: 127.0.0.1
+    port: 400
+    database: gotipath
+    username: root
+    password: ""
+    charset: "utf8mb4"
+    collation: "utf8mb4_unicode_ci"
+    engine: ""
+  mysql:
+    host: 127.0.0.1
+    port: 3306
+    database: gotipath
+    username: root
+    password: ""
+    charset: "utf8mb4"
+    collation: "utf8mb4_unicode_ci"
+    engine: ""
